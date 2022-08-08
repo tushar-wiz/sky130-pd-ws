@@ -20,9 +20,10 @@ prepares the picorv32a design
 ![](https://imgur.com/qPDwEhD.png)
 
 ```run_synthesis```
-We get a cell list like below.
-![](https://imgur.com/vxPRTo8.png)
-![](https://imgur.com/y1APzSV.png)
+We get a cell list like below.  
+
+![](https://imgur.com/vxPRTo8.png)  
+![](https://imgur.com/y1APzSV.png)  
 Flop Ratio --> 1613/14876 = **0.1084**  
 Buffer Ration --> (1656+8)/14876 = **0.1118**
 
