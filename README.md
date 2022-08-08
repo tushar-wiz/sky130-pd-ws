@@ -103,6 +103,9 @@ Adding lines to configure openlane to use ```picorv32a``` design.
 > ![](https://imgur.com/wAcwy6p.png)  
 Successful integration of the inverter standard cell.  
 
+### Finding the cell in the Design
+![](https://imgur.com/GqYerq0.png)
+
 ### STA
 Running the command ```sta pre-sta.tcl``` prints a timing report. Where a slack of -36.62 is reported. 
 ![](https://imgur.com/zWErPS2.png)
