@@ -1,4 +1,4 @@
-# SKY130 Openlane Workshop
+# Advanced Physical Design Workshop Using OPENLANE/SKY130
 
 ## Day 1
 We enter the directory where openlane is installed and run the docker command.
