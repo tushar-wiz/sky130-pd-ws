@@ -21,8 +21,8 @@ prepares the picorv32a design
 
 ```run_synthesis```
 We get a cell list like below.
-![](https://imgur.com/vxPRTo8.ng)
-![](https://imgur.com/y1APzSV.pg)
+![](https://imgur.com/vxPRTo8.png)
+![](https://imgur.com/y1APzSV.png)
 Flop Ratio --> 1613/14876 = **0.1084**  
 Buffer Ration --> (1656+8)/14876 = **0.1118**
 
@@ -43,6 +43,12 @@ We open the created floorplan file in Magic.
 After running ```run_placement``` we open the .def file in magic
 ![](https://imgur.com/hrIyiHy.png)
 ![](https://imgur.com/cOWFWiX.png)
+
+### Changing FP_IO_MODE
+Setting ```FP_IO_MODE``` 2
+![](https://imgur.com/BO9Jee4.png)  
+All IO pins at the bottom left corner.
+![](https://imgur.com/foAzuiC.png)
 
 ## DAY 3
 First we start by cloning the repo which contains the standard cell files.
@@ -71,14 +77,16 @@ and plotting using the command.
 **RISE TIME**  
 ![](https://imgur.com/ovlagYa.png)
 Rise time comes out to be **0.061ns**  
+  
+
 **RISE PROPAGATION DELAY**  
-![](https://imgur.com/S9u8Jot.png)
+![](https://imgur.com/S9u8Jot.png)  
 Rise propagation comes out to be **0.060ns**  
 
 ## DAY 4
-Open the inv cell in magic and we set a grid and generate a ```.lef``` file.
+Open the inv cell in magic and we set a grid.
 ![](https://imgur.com/alZmdjv.png)
-The ```.lef``` file.
+The ```.lef``` file generated from the command ```lef_write```
 ![](https://imgur.com/MvGR66O.png)
 
 Copying the necessary files to merge the lef file.
@@ -91,11 +99,12 @@ Adding lines to configure openlane to use ```picorv32a``` design.
 ```run_synthesis```
 ![](https://imgur.com/Fd8jgFA.png)
 
-> ![](https://imgur.com/wAcwy6p.png) Successful integration of the inverter standard cell.  
+> ![](https://imgur.com/wAcwy6p.png)  
+Successful integration of the inverter standard cell.  
 
 ### STA
-Running the command ```sta pre-sta.tcl`` prints a timing report. Where a slack of -36.62 is reported. 
-[](https://imgur.com/zWErPS2.png)
+Running the command ```sta pre-sta.tcl``` prints a timing report. Where a slack of -36.62 is reported. 
+![](https://imgur.com/zWErPS2.png)
 
 Recognizing slower cells.  
 ![](https://imgur.com/dVbb1bP.png)
@@ -119,6 +128,13 @@ tap_decap_or
 detailed_placement
 gen_pdn
 ```
-After `gen_pdn`
+`gen_pdn`
 ![](https://imgur.com/Eqi2VNg.png)  
 
+`run_routing`
+![](https://imgur.com/5jXV9Cu.png)  
+
+Opening the routing result in magic.
+![](https://imgur.com/cF5OCXk.png)
+Checking a Standard Cell
+![](https://imgur.com/GblYJ6I.png)
