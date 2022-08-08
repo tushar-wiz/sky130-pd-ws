@@ -141,4 +141,6 @@ gen_pdn
 Opening the routing result in magic.
 ![](https://imgur.com/cF5OCXk.png)
 Checking a Standard Cell
-![](https://imgur.com/GblYJ6I.png)
+![](https://imgur.com/GblYJ6I.png)  
+
+*DRC checks are incomplete*
