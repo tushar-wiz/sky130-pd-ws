@@ -64,7 +64,7 @@ Opening the standard cell in Magic.
 ![](https://imgur.com/q6REiNh.png)
 
 A ```.spice``` file is generated which is edited for our needs.
-![](https://imgur.com/dhlCu4z.png)
+![](https://imgur.com/3I1WFDK.png)
 
 ### NgSPICE
 Running the ngspice sim with the command.  
@@ -76,7 +76,7 @@ and plotting using the command.
 > ![](https://imgur.com/d7gfv4Y.png) After Changing the C load
 
 **RISE TIME**  
-![](https://imgur.com/ovlagYa.png)
+![](https://imgur.com/UlsyHdF.png)
 Rise time comes out to be **0.061ns**  
   
 
